@@ -1,4 +1,3 @@
-
 var url = 'http://api.icndb.com/jokes/random';
 var btn = document.querySelector('.container__button');
 var content = document.querySelector('.container__content');
@@ -16,3 +15,5 @@ var getData = function() {
 btn.addEventListener('click', function() {
   getData();
 });
+
+window.onload = getData;
