@@ -7,7 +7,7 @@ var getData = function() {
   request.open('GET', url);
   request.addEventListener('load', function() {
     var response = JSON.parse(request.response);
-    content.innerHTML = response.value.joke;
+    content.innerHTML = response.value.joke || 'no joke';
   });
   request.send();
 }
